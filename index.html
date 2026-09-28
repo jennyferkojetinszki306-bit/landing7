@@ -1,0 +1,780 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Займите своё место на рынке, который будет расти следующие 20 лет: бизнес-франшиза в нише биохакинга и долголетия. Бесплатный онлайн бизнес-форум 10 октября.">
+<meta property="og:title" content="То, что люди хотят сохранить с возрастом, становится рынком">
+<meta property="og:description" content="Стареть никто не хочет — на этом растёт огромный рынок. Готовая бизнес-франшиза под ключ в биохакинге и долголетии. Бизнес-форум 10 октября, 11:00 МСК.">
+<meta property="og:type" content="website">
+<!-- Сюда можно вставить код Яндекс.Метрики -->
+<title>Виктория Иванова | Бизнес-франшиза в нише долголетия</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&family=Onest:wght@400;500;600&display=swap">
+<style>
+:root{
+  --ground:#FBF8F2; --sand:#F4EDE1; --surface:#FFFFFF; --ink:#1F1B16; --muted:#6F665A; --line:#E8DCC6;
+  --sea:#1F1B16; --sea-deep:#F7F1E6; --sea-soft:#F6EFE3; --dawn:#C6A15B; --dawn-deep:#9C7A36; --dawn-soft:#F5EAD3;
+  --on-dark:#1F1B16; --on-dark-muted:#6F665A; --btn-ink:#FFFFFF;
+  --display:"Cormorant Garamond",Georgia,"Times New Roman",serif;
+  --body:"Onest",-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--ground);color:var(--ink);font:400 17px/1.65 var(--body);margin:0}
+.band{padding-inline:20px;padding-block:88px}
+.wrap{max-width:1120px;margin-inline:auto}
+.narrow{max-width:700px}
+h1,h2,h3{font-family:var(--display);font-weight:600;line-height:1.05;margin:0;text-wrap:balance;letter-spacing:-.012em}
+h1{font-size:clamp(42px,6.2vw,78px)}
+h2{font-size:clamp(34px,5vw,58px);margin-bottom:28px}
+h3{font-size:clamp(26px,3vw,32px);margin-bottom:12px}
+p{margin:0 0 16px}
+em{font-style:italic;font-weight:500;color:var(--dawn-deep)}
+b,strong{font-weight:600}
+.eyebrow{font:600 12px/1.4 var(--body);letter-spacing:.16em;text-transform:uppercase;color:var(--sea);margin-bottom:18px;display:flex;align-items:center;gap:12px}
+.eyebrow::before{content:"";width:28px;height:1px;background:currentColor}
+.lead{font-size:clamp(18px,1.6vw,20px);max-width:58ch}
+.muted{color:var(--muted)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;background:var(--sea);color:var(--btn-ink);font:600 14px/1 var(--body);letter-spacing:.08em;text-transform:uppercase;padding:20px 30px;border-radius:999px;text-decoration:none;border:0;cursor:pointer;transition:transform .2s,box-shadow .2s,background .2s}
+.btn:hover{transform:translateY(-2px);box-shadow:0 14px 30px -14px var(--sea)}
+.btn.warm{background:var(--dawn-deep)}
+.btn.warm:hover{box-shadow:0 14px 30px -14px var(--dawn-deep)}
+.btn.ghost{background:transparent;color:var(--on-dark);box-shadow:inset 0 0 0 1px var(--on-dark-muted)}
+.btn:focus-visible,a:focus-visible,input:focus-visible,summary:focus-visible,.carousel:focus-visible{outline:3px solid var(--dawn);outline-offset:3px}
+
+/* ---------- HERO ---------- */
+.hero{position:relative;overflow:hidden;padding-block:48px 72px;
+  background:linear-gradient(180deg,var(--dawn-soft) 0%,var(--ground) 62%)}
+.hero-grid{display:grid;grid-template-columns:1.3fr .7fr;gap:56px;align-items:center}
+.hero .lead{margin-block:28px 36px}
+.hero .variant{display:none}
+.stats{display:flex;flex-wrap:wrap;gap:12px 44px;margin-top:44px;padding-top:24px;border-top:1px solid var(--line)}
+.stats div{font-size:14px;color:var(--muted);line-height:1.3}
+.stats b{display:block;font:600 40px/1 var(--display);color:var(--ink);margin-bottom:4px}
+.portrait{position:relative;margin:0;aspect-ratio:4/5;max-width:100%;border-radius:260px 260px 20px 20px;overflow:hidden;
+  background:linear-gradient(180deg,#F8E6C6 0%,#E3BF7E 48%,#B8A077 48.4%,#7C6646 100%);box-shadow:0 40px 80px -40px rgba(120,90,40,.55)}
+.portrait .sun{position:absolute;left:50%;top:48.2%;width:44%;aspect-ratio:1;transform:translate(-50%,-50%);border-radius:50%;
+  background:radial-gradient(circle,#FFF1D6 0%,#D9AE5E 58%,transparent 71%);clip-path:inset(0 0 50% 0);animation:rise 2.4s cubic-bezier(.2,.7,.2,1) both}
+.portrait .glint{position:absolute;left:50%;top:50%;width:22%;height:44%;transform:translateX(-50%);
+  background:repeating-linear-gradient(180deg,rgba(255,230,180,.75) 0 3px,transparent 3px 12px);
+  -webkit-mask:linear-gradient(180deg,#000,transparent);mask:linear-gradient(180deg,#000,transparent)}
+.portrait img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.portrait figcaption{position:absolute;left:18px;right:18px;bottom:18px;color:#fff;font:italic 500 20px/1.3 var(--display);text-shadow:0 1px 12px rgba(0,0,0,.35)}
+@keyframes rise{from{transform:translate(-50%,-26%)}to{transform:translate(-50%,-50%)}}
+
+/* ---------- PAIN ---------- */
+.pain{background:var(--ground)}
+.pain-head{display:grid;grid-template-columns:1fr;gap:12px;margin-bottom:44px}
+.pains{display:grid;grid-template-columns:repeat(6,1fr);gap:18px}
+.pains article{grid-column:span 2;background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:28px}
+.pains article:nth-child(4),.pains article:nth-child(5){grid-column:span 3}
+.pains h3{font-size:25px;margin-bottom:10px}
+.pains p{font-size:15.5px;color:var(--muted);margin:0}
+.verdict{margin-top:56px;max-width:820px}
+.verdict .big{font:italic 500 clamp(26px,3.2vw,38px)/1.25 var(--display);margin:0;border-left:3px solid var(--dawn);padding-left:24px}
+.verdict .small{font-size:18px;margin:0}
+
+/* ---------- STORY (dark sea) ---------- */
+.story{background:var(--sea-deep);color:var(--on-dark)}
+.story .eyebrow{color:var(--dawn)}
+.story h2{max-width:18ch}
+.timeline{margin-top:56px;display:grid;gap:0}
+.chap{display:grid;grid-template-columns:170px 1fr;gap:40px;padding-block:40px;border-top:1px solid rgba(255,255,255,.12)}
+.chap .yr{font:italic 500 clamp(34px,4vw,48px)/1 var(--display);color:var(--dawn)}
+.chap h3{color:var(--on-dark)}
+.chap p{color:var(--on-dark-muted);max-width:64ch}
+.chap blockquote{margin:22px 0 0;padding:24px 28px;border-radius:16px;background:rgba(255,255,255,.06);font:italic 500 22px/1.4 var(--display);color:var(--on-dark);max-width:64ch}
+.alert{display:inline-block;font:600 14px/1.4 ui-monospace,"SF Mono",Menlo,monospace;letter-spacing:.06em;background:#FBF4E8;color:#1A1A1A;padding:12px 16px;border-radius:8px;margin-bottom:18px}
+.chap.system p{color:var(--on-dark)}
+.chap.today{background:linear-gradient(90deg,rgba(201,161,90,.14),transparent 70%);border-radius:0 18px 18px 0}
+.story-quote{margin:56px 0 36px;font:italic 500 clamp(30px,4vw,48px)/1.2 var(--display);max-width:24ch}
+
+/* ---------- WHY ---------- */
+.why{background:var(--sand)}
+.tbl{overflow-x:auto;margin-block:12px 44px;border-radius:18px;border:1px solid var(--line);background:var(--surface)}
+table{width:100%;border-collapse:collapse;min-width:620px;font-size:15.5px}
+th,td{text-align:left;padding:18px 22px;border-bottom:1px solid var(--line);vertical-align:top}
+tr:last-child td{border-bottom:0}
+th{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);font-weight:600}
+td:first-child{font-weight:600;width:20%}
+td:nth-child(2){color:var(--muted)}
+th:last-child,td:last-child{background:var(--sea-soft)}
+th:last-child{color:var(--sea)}
+.passive{display:grid;grid-template-columns:.8fr 1.2fr;gap:40px;align-items:start}
+.passive h3{font-size:34px}
+
+/* ---------- NUMBERS ---------- */
+.numbers{background:var(--ground)}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin-block:24px 40px;border-top:1px solid var(--line)}
+.step{padding:28px 22px 8px 0;border-right:1px solid var(--line);padding-left:22px}
+.step:first-child{padding-left:0}
+.step:last-child{border-right:0}
+.step .n{font:600 clamp(48px,5.4vw,72px)/1 var(--display);font-variant-numeric:tabular-nums;color:var(--ink)}
+.step:last-child .n{color:var(--dawn-deep)}
+.step .bar{height:6px;border-radius:3px;background:var(--sea-soft);margin:16px 0 14px;overflow:hidden}
+.step .bar i{display:block;height:100%;background:var(--sea);border-radius:3px;min-width:5px}
+.step p{font-size:15px;color:var(--muted);margin:0}
+
+/* ---------- CASES ---------- */
+.cases{background:var(--sand);padding-inline:0}
+.cases .wrap{padding-inline:20px}
+.cases-head{display:flex;justify-content:space-between;align-items:end;gap:20px;flex-wrap:wrap}
+.arrows{display:flex;gap:10px}
+.arrows button{width:52px;height:52px;border-radius:50%;border:1px solid var(--line);background:var(--surface);color:var(--ink);font-size:20px;cursor:pointer}
+.carousel{display:flex;gap:20px;overflow-x:auto;scroll-snap-type:x mandatory;padding:12px 20px 24px;scroll-padding-inline:20px;scrollbar-width:none;max-width:1160px;margin-inline:auto}
+.carousel::-webkit-scrollbar{display:none}
+.case{flex:0 0 min(380px,84vw);scroll-snap-align:start;background:var(--surface);border:1px solid var(--line);border-radius:22px;padding:30px;display:flex;flex-direction:column;gap:18px}
+.case .who{display:flex;gap:16px;align-items:center}
+.case .ph{width:64px;height:64px;border-radius:50%;background:linear-gradient(160deg,#E3BF7E,#7C6646);flex:none;overflow:hidden}
+.case .ph img{width:100%;height:100%;object-fit:cover}
+.case .name{font:600 24px/1.1 var(--display)}
+.case dl{margin:0;display:grid;gap:14px}
+.case dt{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--sea);font-weight:600;margin-bottom:2px}
+.case dd{margin:0;font-size:15px}
+.case.soon{border-style:dashed;background:transparent;justify-content:center;align-items:center;text-align:center;color:var(--muted);min-height:360px;font:italic 500 22px/1.3 var(--display)}
+
+/* ---------- FORUM ---------- */
+.forum{background:var(--ground)}
+.forum-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:start}
+.checks{list-style:none;padding:0;margin:8px 0 24px;display:grid;gap:14px}
+.checks li{padding-left:36px;position:relative}
+.checks li::before{content:"";position:absolute;left:0;top:3px;width:22px;height:22px;border-radius:50%;background:var(--sea-soft)}
+.checks li::after{content:"";position:absolute;left:7px;top:9px;width:8px;height:5px;border-left:2px solid var(--sea);border-bottom:2px solid var(--sea);transform:rotate(-45deg)}
+.lead-form{background:var(--sea-deep);color:var(--on-dark);border-radius:26px;padding:36px;display:grid;gap:16px;position:sticky;top:calc(env(safe-area-inset-top,0px) + 24px);box-shadow:0 40px 80px -48px rgba(120,90,40,.8)}
+.lead-form h3{color:var(--on-dark);font-size:34px}
+.lead-form label{font-size:13px;color:var(--on-dark-muted);display:grid;gap:8px}
+.lead-form input{font:inherit;color:var(--on-dark);background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.18);border-radius:12px;padding:16px 18px}
+.lead-form input::placeholder{color:rgba(241,235,225,.4)}
+.lead-form .btn{margin-top:6px}
+.form-note{font-size:13px;color:var(--on-dark-muted);text-align:center;margin:0}
+.prize{display:flex;gap:12px;align-items:center;justify-content:center;font-size:14px;color:var(--dawn);border-top:1px solid rgba(255,255,255,.12);padding-top:16px;margin:0}
+.notice{background:rgba(201,161,90,.16);border-radius:12px;padding:12px 14px;font-size:14px;color:var(--on-dark)}
+
+/* ---------- MARKET ---------- */
+.market{background:var(--sea-deep);color:var(--on-dark)}
+.market .eyebrow{color:var(--dawn)}
+.market h2{max-width:20ch}
+.market .intro{color:var(--on-dark-muted);max-width:60ch}
+.facts{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:rgba(255,255,255,.12);border-radius:22px;overflow:hidden;margin-block:44px}
+.fact{background:var(--sea-deep);padding:36px}
+.fact .fig{font:600 clamp(44px,5.4vw,68px)/1 var(--display);color:var(--dawn);margin-bottom:6px}
+.fact .t{font:600 22px/1.25 var(--display);margin-bottom:12px;color:var(--on-dark)}
+.fact p{font-size:15px;color:var(--on-dark-muted);margin:0 0 12px}
+.fact a{font-size:12px;color:var(--on-dark-muted);text-decoration:underline;text-underline-offset:3px}
+.conclusion{display:grid;grid-template-columns:.6fr 1.4fr;gap:40px;align-items:start;padding-top:12px}
+.conclusion .label{font:600 12px/1.4 var(--body);letter-spacing:.16em;text-transform:uppercase;color:var(--dawn)}
+.conclusion p{font:italic 500 clamp(24px,2.8vw,32px)/1.3 var(--display);color:var(--on-dark)}
+.sources{font-size:12px;color:var(--on-dark-muted);margin-top:32px}
+
+/* ---------- ABOUT ---------- */
+.about{background:var(--ground)}
+.about-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:56px;align-items:start}
+.about .photo{aspect-ratio:3/4;max-width:100%;border-radius:20px;overflow:hidden;position:relative;
+  background:linear-gradient(170deg,var(--dawn-soft),var(--sand) 55%,var(--sea-soft))}
+.about .photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.about ul{list-style:none;padding:0;margin:0;display:grid;gap:0}
+.about li{padding-block:22px;border-bottom:1px solid var(--line)}
+.about li:first-child{padding-top:0}
+.about li b{display:block;font:600 24px/1.2 var(--display);margin-bottom:6px}
+.about li span{color:var(--muted);font-size:15.5px}
+.mission{margin-top:36px;font:italic 500 clamp(24px,2.6vw,30px)/1.35 var(--display);color:var(--sea)}
+
+/* ---------- FAQ ---------- */
+.faq{background:var(--sand)}
+.faq-grid{display:grid;grid-template-columns:.7fr 1.3fr;gap:56px}
+details{border-bottom:1px solid var(--line);padding-block:22px}
+details:first-of-type{border-top:1px solid var(--line)}
+summary{cursor:pointer;font:600 22px/1.3 var(--display);list-style:none;display:flex;justify-content:space-between;gap:16px}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";font:400 30px/1 var(--display);color:var(--sea);transition:transform .2s}
+details[open] summary::after{transform:rotate(45deg)}
+details p{margin:14px 0 0;color:var(--muted);max-width:66ch}
+
+/* ---------- FINAL ---------- */
+.final{background:linear-gradient(180deg,var(--ground) 0%,var(--dawn-soft) 100%);text-align:center}
+.final h2{max-width:22ch;margin-inline:auto}
+.final .lead{margin:0 auto 36px}
+.leaders{margin:72px auto 0;max-width:820px;background:var(--sea-deep);color:var(--on-dark);border-radius:26px;padding:40px;text-align:left;display:grid;grid-template-columns:1.4fr auto;gap:28px;align-items:center}
+.leaders h3{color:var(--dawn);font-size:30px;margin-bottom:10px}
+.leaders p{color:var(--on-dark-muted);margin:0}
+.leaders form{grid-column:1/-1;display:grid;grid-template-columns:1fr 1fr auto;gap:12px;background:none;padding:0;box-shadow:none;position:static}
+footer{padding:36px 20px 48px;background:var(--sea-deep);color:var(--on-dark-muted);font-size:12px}
+footer .wrap{border-top:1px solid rgba(255,255,255,.1);padding-top:24px}
+
+@media (max-width:900px){
+  .band{padding-block:64px}
+  .hero-grid,.forum-grid,.about-grid,.faq-grid,.passive,.conclusion,.verdict{grid-template-columns:1fr}
+  .hero-grid{gap:36px}
+  .portrait{max-width:440px;aspect-ratio:1/1.05;border-radius:200px 200px 18px 18px}
+  .pains{grid-template-columns:1fr}
+  .pains article,.pains article:nth-child(4),.pains article:nth-child(5){grid-column:auto}
+  .chap{grid-template-columns:1fr;gap:10px}
+  .steps{grid-template-columns:1fr 1fr}
+  .step{border-right:0;border-bottom:1px solid var(--line);padding-left:0;padding-bottom:22px}
+  .step:nth-child(odd){padding-right:16px;border-right:1px solid var(--line)}
+  .step:nth-child(even){padding-left:16px}
+  .facts{grid-template-columns:1fr}
+  .lead-form{position:static}
+  .about .photo{max-width:380px}
+  .leaders{grid-template-columns:1fr}
+  .leaders form{grid-template-columns:1fr}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}
+
+.risk-note{font-size:14px;color:var(--muted);max-width:56ch;margin:-20px 0 32px;padding-left:14px;border-left:2px solid var(--dawn)}
+.pains.three{grid-template-columns:repeat(3,1fr)}
+.pains.three article,.pains.three article:nth-child(4),.pains.three article:nth-child(5){grid-column:auto}
+.pains.three article.wide{grid-column:1/-1;background:var(--dawn-soft);border-color:transparent}
+.kit{display:flex;flex-wrap:wrap;align-items:center;gap:14px;font:600 clamp(22px,2.6vw,30px)/1.2 var(--display);color:var(--on-dark);margin-top:36px}
+.kit span{font:600 11px/1 var(--body);letter-spacing:.16em;text-transform:uppercase;background:var(--dawn);color:#1A1A1A;padding:8px 12px;border-radius:999px}
+.kit.light{color:var(--ink);margin:0 0 28px}
+.kit2-text{margin-bottom:12px}
+.chap .yr.sm{font-size:clamp(24px,2.6vw,30px)}
+.market .facts{margin-top:24px}
+.network-note{font-size:13px;line-height:1.5;color:var(--on-dark-muted);border-top:1px solid rgba(255,255,255,.12);padding-top:14px;margin:0}
+.honest{margin-top:28px;padding:20px 22px;background:var(--sand);border-radius:16px;font-size:15.5px}
+@media (max-width:900px){.pains.three{grid-template-columns:1fr}}
+.hero-cta{display:grid;justify-items:start;gap:10px}
+.cta-note{font-size:14px;color:var(--muted);margin:0}
+.text-link{font-size:14px;color:var(--sea);text-underline-offset:4px}
+.ph-date{background:var(--dawn-soft);color:var(--dawn-deep);border-radius:6px;padding:0 6px;font-weight:600}
+.next-forum{border:1px solid var(--line);background:var(--surface);border-radius:18px;padding:22px 24px;margin:8px 0 24px}
+.nf-label{font:600 11px/1 var(--body);letter-spacing:.16em;text-transform:uppercase;color:var(--dawn-deep);margin-bottom:10px}
+.nf-date{font:600 clamp(24px,2.6vw,30px)/1.2 var(--display)}
+.nf-meta{font-size:14px;color:var(--muted);margin-top:6px}
+.consent{display:flex!important;grid-template-columns:none;gap:10px;align-items:flex-start;font-size:12.5px;line-height:1.45;color:var(--on-dark-muted);cursor:pointer}
+.consent input{flex:none;width:18px;height:18px;margin:2px 0 0;padding:0;accent-color:var(--dawn-deep)}
+.consent a{color:var(--on-dark);text-underline-offset:3px}
+.legal-links{display:flex;flex-wrap:wrap;gap:8px 24px;margin-top:12px}
+.legal-links a{color:var(--on-dark-muted)}
+.hp{position:absolute;left:-9999px;width:1px;height:1px;opacity:0}
+[hidden]{display:none!important}
+img{max-width:100%}
+.forum-preview{max-width:56ch;margin:-12px 0 28px;padding:16px 18px;border-radius:14px;background:var(--surface);border:1px solid var(--line)}
+.forum-preview .fp-label{font:600 11px/1.3 var(--body);letter-spacing:.14em;text-transform:uppercase;color:var(--dawn-deep);margin-bottom:6px}
+.forum-preview p{margin:0;font-size:15px;color:var(--muted)}
+.market{--sea-deep:var(--sand);--on-dark:var(--ink);--on-dark-muted:var(--muted)}
+.market .facts{background:var(--line)}
+.market .fact{background:var(--surface)}
+.market .eyebrow,.market .fact .fig{color:var(--dawn-deep)}
+h1.caps{text-transform:uppercase;font-size:clamp(36px,5.2vw,64px);letter-spacing:.01em;line-height:1.02}
+h1.caps em{display:block;text-transform:none;font-size:.82em;letter-spacing:0;margin-top:8px}
+.hero .lead{margin-block:22px 28px}
+.event{display:inline-flex;flex-direction:column;gap:4px;padding:16px 22px;border-radius:16px;background:var(--sea);color:var(--on-dark)}
+.event-label{font:600 11px/1 var(--body);letter-spacing:.2em;text-transform:uppercase;color:var(--dawn)}
+.event-meta{font:600 clamp(20px,2.2vw,26px)/1.2 var(--display);text-transform:uppercase;letter-spacing:.04em}
+.event-meta span{color:var(--dawn);padding-inline:6px}
+.hero-intro{margin:24px 0 0;font:italic 500 clamp(20px,2vw,24px)/1.35 var(--display)}
+.hero-board{margin-top:48px;display:grid;grid-template-columns:1fr 1fr;gap:28px 40px;background:var(--surface);border:1px solid var(--line);border-radius:24px;padding:32px 36px}
+.hb-title{font-weight:600;margin:0 0 14px}
+.pillars{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.pillars li{display:flex;align-items:center;gap:10px;background:var(--sand);border-radius:12px;padding:12px 14px;font-weight:500;font-size:15px}
+.pillars li span{font-size:20px;line-height:1}
+.hb-note{margin:14px 0 0;font-size:14px;color:var(--muted)}
+.dashes{list-style:none;padding:0;margin:0;display:grid;gap:10px}
+.dashes li{position:relative;padding-left:26px;font-size:15.5px}
+.dashes li::before{content:"—";position:absolute;left:0;color:var(--dawn-deep)}
+.hb-cta{grid-column:1/-1;display:flex;flex-wrap:wrap;align-items:center;gap:12px 24px;border-top:1px solid var(--line);padding-top:24px}
+.hb-q{font:italic 500 clamp(20px,2vw,24px)/1.3 var(--display);margin:0;flex:1 1 280px}
+.hb-cta .cta-note{flex-basis:100%;margin:0}
+@media (max-width:900px){.hero-board{grid-template-columns:1fr;padding:24px}.pillars{grid-template-columns:1fr}}
+.forum-preview .fp-intro{margin:0 0 8px;font-size:15px;color:var(--ink);font-weight:500}
+.fp-list{list-style:none;padding:0;margin:0;display:grid;gap:6px}
+.fp-list li{position:relative;padding-left:22px;font-size:15px;color:var(--muted)}
+.fp-list li::before{content:"";position:absolute;left:4px;top:.62em;width:7px;height:7px;border-radius:50%;background:var(--dawn)}
+
+/* ===== Luxury light theme (no dark backgrounds) ===== */
+.band+.band{border-top:1px solid var(--line)}
+.eyebrow{color:var(--dawn-deep)}
+.btn.warm{background:linear-gradient(135deg,#D2B06A 0%,#B08A42 55%,#9C7A36 100%);box-shadow:0 10px 24px -14px rgba(156,122,54,.9)}
+.story{background:var(--sea-deep)}
+.story .eyebrow{color:var(--dawn-deep)}
+.chap{border-top:1px solid var(--line)}
+.chap p{color:var(--muted)}
+.chap.system p,.chap h3{color:var(--ink)}
+.chap .yr{color:var(--dawn-deep)}
+.chap blockquote{background:var(--surface);border:1px solid var(--line);border-left:3px solid var(--dawn);color:var(--ink)}
+.chap.today{background:linear-gradient(90deg,rgba(198,161,91,.16),transparent 75%)}
+.alert{border:1px solid var(--line);background:var(--surface);color:var(--ink)}
+.lead-form{background:var(--surface);color:var(--ink);border:1px solid var(--line);border-top:3px solid var(--dawn);box-shadow:0 30px 60px -40px rgba(120,90,40,.35)}
+.lead-form h3{color:var(--ink)}
+.lead-form label{color:var(--muted)}
+.lead-form input{background:var(--ground);border:1px solid var(--line);color:var(--ink)}
+.lead-form input::placeholder{color:#A99F90}
+.form-note{color:var(--muted)}
+.prize,.network-note{border-top:1px solid var(--line)}
+.prize{color:var(--dawn-deep)}
+.notice{background:var(--dawn-soft);color:var(--ink)}
+.consent{color:var(--muted)}
+.consent a{color:var(--ink)}
+.leaders{background:var(--surface);color:var(--ink);border:1px solid var(--line);border-top:3px solid var(--dawn);box-shadow:0 30px 60px -40px rgba(120,90,40,.35)}
+.leaders h3{color:var(--dawn-deep)}
+.leaders p{color:var(--muted)}
+.btn.ghost{color:var(--ink);box-shadow:inset 0 0 0 1px var(--dawn)}
+.portrait{box-shadow:0 30px 60px -36px rgba(120,90,40,.55);outline:1px solid var(--dawn);outline-offset:8px}
+.market .fact .fig,.step:last-child .n{color:var(--dawn-deep)}
+footer{background:var(--sand);color:var(--muted);border-top:1px solid var(--line)}
+footer .wrap{border-top:0}
+.legal-links a{color:var(--muted)}
+.leaders form{border:0;box-shadow:none;padding:0;background:none}
+[hidden]{display:none!important}
+/* ===== Wine accent ===== */
+:root{--wine:#6E1F2F;--wine-soft:#F5E9E9}
+.btn:not(.warm):not(.ghost){background:var(--wine)}
+.btn:not(.warm):not(.ghost):hover{box-shadow:0 14px 30px -14px var(--wine)}
+.chap .yr{color:var(--wine)}
+.verdict .big{border-left-color:var(--wine)}
+.chap blockquote{border-left-color:var(--wine)}
+.story-quote,.mission{color:var(--wine)}
+.forum-preview .fp-label,.nf-label{color:var(--wine)}
+.fp-list li::before{background:var(--wine)}
+.prize{color:var(--wine)}
+.leaders h3{color:var(--wine)}
+.leaders{border-top-color:var(--wine)}
+summary::after{color:var(--wine)}
+.text-link{color:var(--wine)}
+.kit span{background:var(--wine);color:#fff}
+.pains.three article.wide{background:var(--wine-soft)}
+.alert{color:var(--wine);border-color:var(--wine)}
+
+/* ===== Positioning update ===== */
+.hero-sub{font-size:14.5px;color:var(--muted);max-width:58ch;margin:-18px 0 26px}
+.status{background:var(--surface)}
+.status-h{max-width:24ch}
+.status-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border-top:1px solid var(--line);margin-top:8px}
+.status-grid div{padding:24px 24px 4px 0;border-right:1px solid var(--line)}
+.status-grid div+div{padding-left:24px}
+.status-grid div:last-child{border-right:0}
+.status-grid b{display:block;font:600 22px/1.2 var(--display);color:var(--wine);margin-bottom:8px}
+.status-grid p{font-size:15px;color:var(--muted);margin:0}
+.paths{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.path-card{background:var(--surface);border:1px solid var(--line);border-radius:22px;padding:30px;display:flex;flex-direction:column;gap:14px;align-items:flex-start}
+.path-card.strong{border-top:3px solid var(--wine);box-shadow:0 30px 60px -44px rgba(110,31,47,.55)}
+.path-tag{font:600 11px/1.3 var(--body);letter-spacing:.14em;text-transform:uppercase;color:var(--wine)}
+.path-card h3{font-size:clamp(22px,2.3vw,27px);margin:0}
+.path-card p{margin:0;color:var(--muted);font-size:15.5px}
+.path-fx{font-size:13px!important}
+.path-list{list-style:none;padding:0;margin:0;display:grid;gap:10px;font-size:15px;color:var(--muted)}
+.path-list b{color:var(--ink)}
+.path-card .btn{margin-top:auto}
+.story h2{max-width:26ch}
+@media (max-width:900px){.paths,.status-grid{grid-template-columns:1fr}.status-grid div{border-right:0;border-bottom:1px solid var(--line);padding:18px 0!important}}
+.portrait.has-photo{background:var(--sand)}
+.portrait.has-photo img{object-position:50% 20%}
+.portrait.has-photo::after{content:"";position:absolute;inset:auto 0 0 0;height:32%;background:linear-gradient(180deg,transparent,rgba(31,27,22,.55))}
+.portrait.has-photo figcaption{z-index:1;font-size:18px}
+.about .photo img{object-position:50% 15%}
+.status-sub{margin:-12px 0 28px;color:var(--muted)}
+.health-kits{list-style:none;padding:0;margin:0 0 32px;display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.health-kits li{background:var(--surface);border:1px solid var(--line);border-top:3px solid var(--wine);border-radius:14px;padding:16px 18px;font-size:14px;color:var(--muted)}
+.health-kits b{display:block;font:600 22px/1.2 var(--display);color:var(--ink);margin-bottom:2px}
+@media (max-width:700px){.health-kits{grid-template-columns:1fr}}
+.author-name{margin:0 0 20px}
+.leader-stats{list-style:none;padding:0;margin:4px 0 0;display:grid;gap:8px}
+.leader-stats li{display:flex;align-items:baseline;gap:10px;font-size:15px;color:var(--muted);padding:8px 12px;background:var(--wine-soft);border-left:3px solid var(--wine);border-radius:0 10px 10px 0}
+.leader-stats span{font:600 24px/1 var(--display);color:var(--wine);min-width:64px}
+.neg{color:var(--wine);font-style:italic;text-decoration:underline;text-decoration-color:var(--dawn);text-decoration-thickness:2px;text-underline-offset:6px}
+
+/* ===== Structure v3 ===== */
+.hero-v2{padding-block:32px 72px}
+.stage{margin:0 0 40px;border-radius:24px;overflow:hidden;aspect-ratio:16/8;max-width:100%;box-shadow:0 40px 80px -48px rgba(120,90,40,.6);outline:1px solid var(--dawn);outline-offset:6px;background:var(--sand)}
+.stage img{width:100%;height:100%;object-fit:cover;object-position:50% 40%;display:block}
+.hero-grid2{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:start}
+.hero-v2 .forum-preview{margin:0 0 24px;max-width:none}
+.hero-v2 .stats{margin-top:28px}
+.longevity{background:var(--surface);text-align:left}
+.big-phrase{font-size:clamp(38px,5.6vw,68px);max-width:20ch;margin-bottom:40px}
+.big-phrase em{display:block;color:var(--wine)}
+.potential{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.potential div{border-top:3px solid var(--dawn);background:var(--ground);border-radius:0 0 16px 16px;padding:22px}
+.potential b{display:block;font:600 22px/1.2 var(--display);margin-bottom:8px}
+.potential p{margin:0;font-size:15px;color:var(--muted)}
+.vic-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:56px;align-items:center;margin-bottom:48px}
+.vic-photo{margin:0;aspect-ratio:4/5;max-width:100%;border-radius:220px 220px 20px 20px;overflow:hidden;outline:1px solid var(--dawn);outline-offset:8px;background:var(--sand)}
+.vic-photo img{width:100%;height:100%;object-fit:cover;object-position:50% 20%}
+.vic-name{font-size:clamp(44px,5.6vw,68px);margin-bottom:10px}
+.vic-titles{font:600 13px/1.6 var(--body);letter-spacing:.12em;text-transform:uppercase;color:var(--dawn-deep);margin:0 0 24px}
+.vic-quote{font:italic 500 clamp(26px,3vw,36px)/1.25 var(--display);color:var(--wine);margin:0 0 14px;border-left:3px solid var(--wine);padding-left:20px}
+.income{display:inline-grid;gap:4px;margin-top:14px;padding:18px 24px;border:1px solid var(--line);border-top:3px solid var(--dawn);border-radius:16px;background:var(--surface)}
+.income span{font:600 11px/1 var(--body);letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
+.income b{font:600 clamp(28px,3vw,38px)/1.1 var(--display);color:var(--wine)}
+.income small{font-size:13px;color:var(--muted)}
+.academy{background:var(--sand)}
+.academy-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:56px;align-items:center}
+.academy-photo{aspect-ratio:3/4;max-width:100%;border-radius:20px;overflow:hidden;background:var(--surface)}
+.academy-photo img{width:100%;height:100%;object-fit:cover;object-position:50% 15%}
+.academy-stats{display:flex;flex-wrap:wrap;gap:8px 14px;align-items:baseline;margin:20px 0 12px;font:600 clamp(24px,2.6vw,32px)/1.2 var(--display);color:var(--wine)}
+.academy-stats i{font-style:normal;color:var(--dawn)}
+.academy-tags{list-style:none;padding:0;margin:0 0 8px;display:flex;flex-wrap:wrap;gap:8px}
+.academy-tags li{border:1px solid var(--dawn);border-radius:999px;padding:8px 14px;font-size:14px;background:var(--surface)}
+.academy .honest{background:var(--surface)}
+.compare .compare-intro{margin-bottom:12px}
+@media (max-width:900px){
+  .hero-grid2,.vic-grid,.academy-grid,.potential{grid-template-columns:1fr}
+  .stage{aspect-ratio:4/3}
+  .vic-photo{max-width:420px}
+  .academy-photo{max-width:380px}
+}
+.facts.three{grid-template-columns:repeat(3,1fr)}
+@media (max-width:900px){.facts.three{grid-template-columns:1fr}}
+.h1-long{font-size:clamp(34px,4.4vw,56px)}
+.h1-long em{display:block;margin-top:10px;font-size:.78em;line-height:1.15}
+.hero-path{margin:-6px 0 22px;font:italic 500 clamp(18px,1.8vw,21px)/1.4 var(--display);color:var(--muted);max-width:52ch}
+</style>
+</head>
+<body>
+
+
+<main>
+<!-- 1 · HERO -->
+<header class="band hero hero-v2"><div class="wrap">
+  <figure class="stage"><img src="forum.jpg" alt="Виктория Иванова на сцене бизнес-форума «Займи своё место на самом растущем рынке десятилетия»" width="1600" height="905"></figure>
+  <div class="hero-grid2">
+    <div>
+      <div class="eyebrow">Виктория Иванова · предприниматель новой эры · архитектор международных команд</div>
+      <h1 class="h1-long">То, что люди хотят сохранить с возрастом, становится рынком. <em>Энергию. Активность. Молодость. И на этом можно строить бизнес.</em></h1>
+      <p class="lead">Я даю готовую бизнес-франшизу под ключ на рынке биохакинга и долголетия — чтобы вы не придумывали бизнес с нуля, а сразу заходили в готовую систему.</p>
+      <p class="hero-sub">С минимальными стартовыми инвестициями и без традиционных рисков аренды, персонала, склада и кредитной нагрузки.</p>
+    </div>
+    <div>
+      <div class="forum-preview">
+        <div class="fp-label">Бизнес-форум · 10 октября · 11:00 МСК</div>
+        <p class="fp-intro">Узнайте, как работает система, на онлайн-форуме.</p>
+        <ul class="fp-list">
+          <li>За 2 дня мы с командой покажем, как устроен партнёрский бизнес.</li>
+          <li>Почему биохакинг и долголетие — рынок ближайших десятилетий.</li>
+          <li>Покажем пошаговый маршрут до первой цели — 100 000 ₽ в месяц.</li>
+        </ul>
+      </div>
+      <div class="hero-cta">
+        <a class="btn warm" href="#forum">Забрать билет на форум</a>
+        <p class="cta-note">Бесплатный онлайн-форум</p>
+      </div>
+      <div class="stats">
+        <div><b>25+ лет</b>в бизнесе</div>
+        <div><b>14 000+</b>партнёров</div>
+        <div><b>20</b>стран</div>
+      </div>
+    </div>
+  </div>
+</div></header>
+
+<!-- 2 · MARKET -->
+<section class="band market" id="market"><div class="wrap">
+  <div class="eyebrow">Растущая ниша</div>
+  <h2>Я финансист. Поэтому решения принимаю по цифрам, а не по обещаниям</h2>
+  <p class="intro lead">Биохакинг и долголетие — одна из самых быстрорастущих ниш XXI века. Вот цифры, которые убедили меня.</p>
+  <div class="facts three">
+    <div class="fact"><div class="fig">≈ 570 трлн ₽</div><div class="t">Рынок, который растёт быстрее мировой экономики</div>
+      <p>Около 570 трлн ₽ — объём мирового рынка здоровья и качества жизни. По данным Global Wellness Institute, он вдвое вырос с 2013 года и достиг пика в 2024-м. К 2029 году прогноз — почти 830 трлн ₽, при росте 7,6% в год против 4,5% у мировой экономики. Этот рынок уже почти в четыре раза больше всей фармацевтической индустрии.</p>
+      <a href="https://globalwellnessinstitute.org/industry-research/2025-global-wellness-economy-monitor/" target="_blank" rel="noopener">Global Wellness Institute</a></div>
+    <div class="fact"><div class="fig">1 из 6</div><div class="t">Людей, которым это нужно, становится больше с каждым годом</div>
+      <p>Каждый шестой человек в мире к 2030 году будет старше 60 лет. По данным ВОЗ, к 2030 году таких людей будет 1,4 млрд, а к 2050-му — 2,1 млрд. Люди живут дольше — и хотят прожить эти годы с энергией, а не в болезнях.</p>
+      <a href="https://knowledge-action-portal.com/en/node/8620" target="_blank" rel="noopener">knowledge-action-portal</a></div>
+    <div class="fact"><div class="fig">до 60%</div><div class="t">Люди готовы за это платить — даже в кризис</div>
+      <p>До 60% людей называют здоровое долголетие главным или очень важным приоритетом. Такие данные McKinsey получили, опросив более 9 000 человек в США, Великобритании, Германии и Китае. При этом на здоровье люди экономят в последнюю очередь: даже если финансы ухудшаются, эти траты они сокращать не готовы.</p>
+      <a href="https://www.nutraingredients.com/Article/2025/06/12/longevity-beauty-weight-and-mental-health-top-mckinseys-wellness-trend-predictions" target="_blank" rel="noopener">nutraingredients</a> · <a href="https://europeanspamagazine.com/?p=34808" target="_blank" rel="noopener">europeanspamagazine</a></div>
+  </div>
+  <p class="sources">Источники: Global Wellness Institute, Global Wellness Economy Monitor 2025 · ВОЗ, «Старение и здоровье» · McKinsey, Future of Wellness 2025.</p>
+</div></section>
+
+<!-- 3–4 · LONGEVITY -->
+<section class="band longevity" id="longevity"><div class="wrap">
+  <h2 class="big-phrase">Стареть никто не хочет. <em>А жить дольше и лучше — хотят все.</em></h2>
+  <div class="eyebrow">Куда движется рынок</div>
+  <div class="potential">
+    <div><b>Люди живут дольше</b><p>И хотят прожить эти годы с энергией, а не в болезнях. Спрос на здоровье и качество жизни растёт вместе с продолжительностью жизни.</p></div>
+    <div><b>Здоровье — последнее, на чём экономят</b><p>Даже когда финансы ухудшаются, эти траты люди сокращать не готовы. Это делает рынок устойчивым к кризисам.</p></div>
+    <div><b>Направление на десятилетия</b><p>Рынок растёт на 7,6% в год — быстрее мировой экономики с её 4,5%. Это не тренд одного сезона, а новая большая индустрия.</p></div>
+  </div>
+</div></section>
+
+<!-- 5 · VICTORIA -->
+<section class="band victoria" id="victoria"><div class="wrap">
+  <div class="vic-grid">
+    <figure class="vic-photo"><img src="hero.jpg" alt="Виктория Иванова" width="720" height="900" loading="lazy"></figure>
+    <div>
+      <div class="eyebrow">Кто я</div>
+      <h2 class="vic-name">Виктория Иванова</h2>
+      <p class="vic-titles">Предприниматель, лидер международной команды<br>Основатель компании «Золотые драконы»</p>
+      <p class="vic-quote">Я создаю систему, в которой растут другие предприниматели</p>
+      <p class="lead">Даю готовую бизнес-франшизу под ключ на рынке биохакинга и долголетия.</p>
+      <div class="income"><span>Мой доход сейчас</span><b>более 4 млн ₽ в месяц</b><small>Он абсолютно белый — с него я плачу налоги.</small></div>
+    </div>
+  </div>
+  <div class="status-grid">
+    <div><b>Архитектор международных команд</b><p>14 000+ партнёров в 20 странах компании «Золотые драконы» имеют доступ к Бизнес-академии.</p></div>
+    <div><b>Создатель системы масштабирования</b><p>Я построила систему, которая помогает выстраивать бизнес-империи и работает без моего постоянного участия.</p></div>
+    <div><b>Выращиваю лидеров</b>
+      <ul class="leader-stats">
+        <li><span>1 000+</span>партнёров — с доходом от 100 000 ₽</li>
+        <li><span>160</span>— от 200 000 до 500 000 ₽</li>
+        <li><span>20</span>— от 1 млн ₽ в месяц</li>
+      </ul></div>
+  </div>
+</div></section>
+
+<!-- 5b · STORY -->
+<section class="band story" id="story"><div class="wrap">
+  <div class="eyebrow">Моя история</div>
+  <h2>Я трижды теряла всё — и поэтому построила систему, которая <span class="neg">не</span> держится на одном человеке</h2>
+  <div class="timeline">
+    <div class="chap"><div class="yr">18 лет</div><div>
+      <h3>Исполнитель чужих целей</h3>
+      <p>В 18 лет — главный бухгалтер, потом финансовый директор. Хорошие деньги, статус и постоянное чувство, что я живу чужими целями.</p>
+    </div></div>
+    <div class="chap"><div class="yr">2008</div><div>
+      <h3>«Тебе кажется, что ты имеешь бизнес. А это бизнес имеет тебя»</h3>
+      <p>Сеть супермаркетов, потом автосалоны. Пока салонов было два — прибыль. Когда стало шесть — убытки. Всё держалось на мне. Потом доллар взлетел, и валютные кредиты увели меня в минус. Я выплыла, но вопрос остался: как масштабировать бизнес и не стать его заложником?</p>
+    </div></div>
+    <div class="chap"><div class="yr">2017</div><div>
+      <h3>Где выгодно делать другого сильным</h3>
+      <p>Я пришла в партнёрский бизнес из любопытства — посмотреть, как другие масштабируются там, где у меня не получалось. И увидела другую логику.</p>
+      <blockquote>Если бы подруга попросила помочь ей открыть такое же турагентство, как у меня, я бы сказала: «Дорогая, я не могу своими руками вырастить себе конкурента». А в партнёрском бизнесе я говорю: «Конечно, давай, всё покажу». Потому что её бизнес становится частью моего.</blockquote>
+    </div></div>
+    <div class="chap"><div class="yr">2022</div><div>
+      <h3>Один день, который всё обнулил</h3>
+      <p>Доход — 3 миллиона рублей в месяц. Дочь учится в Лондоне. И за один день компания, с которой я работала, уходит с рынка. Дочь вставляет карту в банкомат, а на экране:</p>
+      <div class="alert">ВАША КАРТА БОЛЬШЕ НЕ ОБСЛУЖИВАЕТСЯ</div>
+      <p>Два года на Бали я разбирала себя по косточкам и задала себе главный вопрос: не «за что», а «для чего». Ответ был трезвым, как у финансиста: будущее — за биохакингом, долголетием и онлайн-моделями без границ.</p>
+    </div></div>
+    <div class="chap system"><div class="yr">Система</div><div>
+      <h3>Я построила систему, которая помогает выстраивать бизнес-империи 🚀</h3>
+      <p>Я приобрела бизнес-франшизу международной компании, которая больше 20 лет создаёт продукты для энергии и качества жизни. Первые пять месяцев не получалось ничего. И только когда я совместила свою методологию финансиста с моделью бизнес-франшизы, появилась система масштабирования: в ней партнёры строят свои структуры и растят своих лидеров.</p>
+    </div></div>
+    <div class="chap today"><div class="yr">Сегодня</div><div>
+      <p style="color:var(--on-dark)">Сегодня мой доход — более 4 млн ₽ в месяц. В команде 14 000+ партнёров в 20 странах. Германию запустили партнёры моих партнёров — я их даже не знаю лично. Я шучу: «В Германии рабочий день, а у меня рассвет на набережной». Для меня это главный показатель, что бизнес построен правильно: он работает, пока я смотрю на море.</p>
+    </div></div>
+  </div>
+  <p class="story-quote">Мечта у вас уже есть. Я даю маршрут, по которому к ней уже дошли сотни людей.</p>
+  <a class="btn warm" href="#academy">Как устроена моя система ↓</a>
+</div></section>
+
+<!-- 5c · ACADEMY -->
+<section class="band academy" id="academy"><div class="wrap academy-grid">
+  <div class="academy-photo"><img src="about.jpg" alt="Виктория Иванова за рабочим столом" width="660" height="880" loading="lazy"></div>
+  <div>
+    <div class="eyebrow">Компания «Золотые драконы»</div>
+    <h2>Бизнес-академия «Золотые драконы»</h2>
+    <p class="lead">Авторская система Виктории Ивановой для построения и масштабирования бизнеса.</p>
+    <p>Здесь партнёры получают систему обучения, наставничество и инструменты для развития собственного бизнеса — от первых шагов до построения команды и масштабирования.</p>
+    <div class="academy-stats"><b>14 000+ партнёров</b><i>|</i><b>20 стран</b></div>
+    <ul class="academy-tags"><li>Система обучения</li><li>Наставничество</li><li>Масштабирование</li></ul>
+    <p class="honest">Скажу честно: я работаю в сетевом бизнесе. Это одна из форм партнёрского бизнеса, и я выбрала её осознанно — после двадцати лет в традиционном бизнесе. Только эта модель дала мне масштаб без офисов, персонала и операционки.</p>
+    <p class="mission">Моя миссия — помогать другим становиться сильными, финансово свободными лидерами.</p>
+  </div>
+</div></section>
+
+<!-- 6 · WHO I NEED -->
+<section class="band pain" id="pain"><div class="wrap">
+  <div class="pain-head narrow">
+    <div class="eyebrow">Кто мне нужен</div>
+    <h2>Узнаёте себя в одном из двух сценариев?</h2>
+  </div>
+  <div class="paths">
+    <article class="path-card strong">
+      <div class="path-tag">Сценарий 1 · вы уже умеете зарабатывать</div>
+      <h3>«Я научилась зарабатывать 200–300 тысяч. А хочу больше нулей — 2–3 млн»</h3>
+      <p>Вы предприниматель или сетевой предприниматель и уже умеете зарабатывать 200 000–300 000 ₽ в месяц. Следующий уровень — 2–3 млн ₽ — требует другого: системы масштабирования, международного рынка и среды лидеров, которые мыслят миллионами.</p>
+      <a class="btn" href="#leaders">Хочу больше нулей</a>
+    </article>
+    <article class="path-card">
+      <div class="path-tag">Сценарий 2 · доход держится на вас</div>
+      <h3>«Я умная, сильная, всю жизнь работаю. Почему мой доход до сих пор не соответствует моим способностям?»</h3>
+      <ul class="path-list">
+        <li><b>Вы предприниматель,</b> и ваш бизнес держится на вас: стоит отойти на неделю — и всё буксует.</li>
+        <li><b>Вы эксперт,</b> и ваш доход равен вашим часам. Не вышли на работу — не заработали.</li>
+        <li><b>Вы работаете на себя</b> — риелтор, страховой агент, психолог, мастер — а свободы так и не стало.</li>
+      </ul>
+      <a class="btn warm" href="#forum">Забрать билет на форум</a>
+    </article>
+  </div>
+  <div class="verdict">
+    <p class="big">В обоих случаях задача одна: перестать продавать своё время и начать строить актив — систему, которая работает, даже когда вы отдыхаете.</p>
+  </div>
+</div></section>
+
+<!-- 7 · CASES -->
+<section class="band cases" id="cases">
+  <div class="wrap cases-head">
+    <div>
+      <div class="eyebrow">Истории партнёров</div>
+      <h2 style="margin-bottom:8px">Как это получилось у других</h2>
+      <p class="muted" style="margin:0">Что сделали люди, которые прошли путь по моей системе. Листайте →</p>
+    </div>
+    <div class="arrows"><button type="button" id="prev" aria-label="Предыдущая история">←</button><button type="button" id="next" aria-label="Следующая история">→</button></div>
+  </div>
+  <div class="carousel" id="carousel" tabindex="0" aria-label="Истории партнёров">
+    <article class="case">
+      <div class="who"><div class="ph" data-photo="inna"></div><div><div class="name">Инна Долматова</div><div class="muted" style="font-size:14px">врач-вертебролог</div></div></div>
+      <dl>
+        <div><dt>Было</dt><dd>В партнёрских компаниях — только как покупатель и продавец продукта. Больших денег не было, бизнес-вход собирала «по кусочкам».</dd></div>
+        <div><dt>Перелом</dt><dd>Тащила всё на себе и довела себя до срыва: «Я больше так не могу». Поняла: не делать за людей, а учить их. Сняла профессиональную корону и пошла по шагам.</dd></div>
+        <div><dt>Стало · за 1,5 года</dt><dd>Один из высших статусов компании, доход около 3 млн ₽ в месяц, в команде выросли свои лидеры.</dd></div>
+      </dl>
+    </article>
+    <article class="case soon">История партнёра<br>скоро здесь</article>
+    <article class="case soon">История партнёра<br>скоро здесь</article>
+    <article class="case soon">История партнёра<br>скоро здесь</article>
+  </div>
+</section>
+
+<!-- 8 · NUMBERS -->
+<section class="band numbers" id="numbers"><div class="wrap">
+  <div class="eyebrow">Цифры без глянца · результаты у всех разные</div>
+  <h2>Я не обещаю миллион каждому. Я показываю честную статистику своей команды</h2>
+  <p class="lead">14 000+ партнёров компании «Золотые драконы» в 20 странах имеют доступ к Бизнес-академии. Она построена на трёх китах здоровья:</p>
+  <ul class="health-kits">
+    <li><b>Финансовое</b>доход и собственный бизнес</li>
+    <li><b>Физическое</b>энергия и качество жизни</li>
+    <li><b>Ментальное</b>мышление и окружение</li>
+  </ul>
+  <div class="steps">
+    <div class="step"><div class="n">14 000+</div><div class="bar"><i style="width:100%"></i></div><p>партнёров с доступом к Бизнес-академии</p></div>
+    <div class="step"><div class="n">1 000+</div><div class="bar"><i style="width:7.1%"></i></div><p>человек с доходом от 100 000 ₽ в месяц</p></div>
+    <div class="step"><div class="n">160</div><div class="bar"><i style="width:1.2%"></i></div><p>человек с доходом от 200 000 до 500 000 ₽ в месяц</p></div>
+    <div class="step"><div class="n">20</div><div class="bar"><i style="width:.3%"></i></div><p>человек с доходом от 1 млн ₽ в месяц</p></div>
+  </div>
+  <p class="lead">А ещё более 9 000 — умные клиенты и начинающие партнёры, у которых уже фантастические результаты в здоровье.</p>
+  <p class="lead">Кто-то проходит путь за полгода, кто-то за два года, а кто-то останавливается на первой ступени. Разница не в везении, а в том, сколько шагов человек готов сделать. <b>Возможности на старте одинаковые. Система одна. Результат — ваш.</b></p>
+</div></section>
+
+<!-- 9 · COMPARE -->
+<section class="band why compare" id="compare"><div class="wrap">
+  <div class="eyebrow">Сравнение с традиционным бизнесом</div>
+  <h2>В традиционном бизнесе: вливаю внимание — платят, убираю внимание — не платят</h2>
+  <div class="kit2-text narrow compare-intro">
+    <p class="lead">Так было во всех моих прошлых бизнесах. В моей системе я могу уехать в отпуск, а доход продолжает приходить. По этой системе уже растут сотни партнёров — с разными результатами, и ниже я честно их показываю.</p>
+    <p class="lead"><b>То же самое я предлагаю сделать вам.</b></p>
+  </div>
+  <div class="tbl"><table>
+    <thead><tr><th></th><th>Традиционный бизнес</th><th>Бизнес-франшиза в моей системе</th></tr></thead>
+    <tbody>
+      <tr><td>Старт</td><td>Кредиты, аренда, персонал, закупки</td><td>Минимальные инвестиции, которые остаются у вас продуктом</td></tr>
+      <tr><td>Кто делает работу</td><td>Всё на вас: склад, люди, налоги, отчёты</td><td>Компания берёт на себя ~90%: производство, логистику, склады, выплаты</td></tr>
+      <tr><td>Масштаб</td><td>Каждый новый филиал — новые риски</td><td>Каждый новый партнёр — новый филиал в вашем обороте</td></tr>
+      <tr><td>Конкуренция</td><td>Помочь другому — вырастить конкурента</td><td>Помочь другому — вырастить свой доход</td></tr>
+      <tr><td>География</td><td>Один город, один офис</td><td>Онлайн: 20 стран, работа из любой точки мира</td></tr>
+    </tbody>
+  </table></div>
+</div></section>
+
+<!-- 10 · OBJECTION + FORUM -->
+<section class="band forum" id="forum"><div class="wrap forum-grid">
+  <div>
+    <div class="eyebrow">Бизнес-форум</div>
+    <h2>Возможно, вы думаете, что у вас не получится</h2>
+    <p class="lead">Как раз для этого мы с командой проводим бизнес-форум — показать всю систему целиком, чтобы вы могли решить: ваше это или нет.</p>
+    <p>Девять лет назад я пришла в этот бизнес из любопытства — мне просто хотелось понять, как другие масштабируются там, где у меня не получалось. Это любопытство изменило мою жизнь.</p>
+    <p class="muted">Онлайн бизнес-форум ведём мы с командой. За два дня вы:</p>
+    <ul class="checks">
+      <li>увидите бизнес-модель целиком: откуда берутся деньги и что конкретно делать;</li>
+      <li>поймёте, почему биохакинг и долголетие — рынок ближайших десятилетий;</li>
+      <li>познакомитесь с продуктом через врачей, диагностов и реальные истории;</li>
+      <li>познакомитесь с партнёрами и клиентами и их результатами: увидите кейсы, отзывы и личные мнения тех, кто был на вашем месте ещё несколько месяцев назад;</li>
+      <li>получите пошаговый план «Лёгкий старт»: что делать в первые недели, чтобы выйти на первый доход.</li>
+    </ul>
+    <div class="next-forum">
+      <div class="nf-label">Ближайший форум</div>
+      <div class="nf-date">10 октября · начало в 11:00 по Москве</div>
+      <div class="nf-meta">Онлайн · 2 дня · бесплатно · ссылку на эфир пришлём после регистрации</div>
+    </div>
+    <p>На последнем форуме было больше тысячи человек, поэтому мы решили провести его повторно. Если чувствуете, что хотите узнать подробнее, — забирайте, пожалуйста, билет.</p>
+  </div>
+  <form class="lead-form" id="leadForm" novalidate>
+    <input type="hidden" name="source" value="Билет на бизнес-форум">
+    <input type="text" name="website" tabindex="-1" autocomplete="off" class="hp" aria-hidden="true">
+    <h3>Билет на бизнес-форум 10 октября — бесплатно</h3>
+    <label for="f-name">Ваше имя<input id="f-name" name="name" autocomplete="given-name"></label>
+    <label for="f-contact">Телефон или Telegram<input id="f-contact" name="contact" placeholder="+7… или @username"></label>
+    <label class="consent" for="f-consent"><input type="checkbox" id="f-consent" name="consent" value="1"><span>Я даю <a href="consent.html" target="_blank" rel="noopener">согласие на обработку персональных данных</a> в соответствии с Федеральным законом № 152-ФЗ и принимаю <a href="privacy.html" target="_blank" rel="noopener">политику конфиденциальности</a></span></label>
+    <button class="btn warm" type="submit">Забрать билет</button>
+    <p class="form-note">Бесплатно · Онлайн · Решение — после форума</p>
+    <div class="notice" id="f-msg" hidden></div>
+    <p class="prize">Среди участников — розыгрыш призов на 100 000+ ₽</p>
+    <p class="network-note">Особенно приветствую тех, у кого есть опыт в сетевом бизнесе. Ваши навыки здесь очень пригодятся, а в модели бизнес-франшизы вы получите лучший финансовый результат и большую устойчивость.</p>
+  </form>
+</div></section>
+
+<!-- FAQ -->
+<section class="band faq" id="faq"><div class="wrap faq-grid">
+  <div><h2>Частые вопросы</h2></div>
+  <div>
+    <details><summary>Как работает эта модель бизнеса?</summary><p>Мы используем модель партнёрских бизнесов как рычаг и работаем по системе, больше похожей на IT-стартап: воронки, трафик, аналитика.</p></details>
+    <details><summary>Нужны ли инвестиции?</summary><p>Да. Это бизнес, а не работа по найму: вы открываете своё бизнес-место — бизнес-франшизу международной компании. Вы получаете готовый продукт, бренд и отработанную систему. В отличие от классической франшизы здесь не нужны паушальный взнос, аренда, ремонт и сотрудники: производство, склады и доставку берёт на себя компания. За свои деньги вы получаете продукт и оборудование для здоровья и энергии, которые остаются с вами при любом исходе. Сумма зависит от формата старта, мы разбираем её на форуме.</p></details>
+    <details><summary>Что конкретно я буду делать?</summary><p>Мы строим бизнес как IT-стартап: онлайн-воронка, форум, автоматизированное обучение, аналитика. Вам не нужно стоять за прилавком или продавать продукт руками — я сама вышла на высокий доход именно так. Ваша задача — знакомить людей с возможностью и помогать им сделать первые шаги.</p></details>
+    <details><summary>У меня нет опыта в бизнесе. Получится?</summary><p>Система создана именно для этого. «Лёгкий старт» — пошаговые задания на 10 дней: что делать сегодня, что завтра. Инна, например, была врачом и от бизнеса была «далека, как я от балета».</p></details>
+    <details><summary>Мне больше 40. Не поздно?</summary><p>Большинство моих партнёров — женщины 35–55 лет. У вас есть то, чего нет у двадцатилетних: опыт, связи, умение брать ответственность и доверие людей.</p></details>
+    <details><summary>Я не умею продавать. Это проблема?</summary><p>Нет. Здесь не нужно уговаривать. Бизнес за вас презентует онлайн-форум, где о рынке и продукте рассказывают врачи, эксперты и люди, уже прошедшие этот путь. Ваша задача — пригласить человека посмотреть, а решение он примет сам.</p></details>
+    <details><summary>Сколько времени это займёт?</summary><p>Для серьёзного результата — 10–15 часов в неделю. График выстраиваете сами, работать можно из любой страны.</p></details>
+    <details><summary>А если не получится?</summary><p>Вы остаётесь с продуктом для здоровья и со своим бизнес-местом — запасным аэродромом, к которому можно вернуться в любой момент.</p></details>
+  </div>
+</div></section>
+
+<!-- 11 · FINAL -->
+<section class="band final" id="final"><div class="wrap">
+  <h2>Если вы хотите перестать продавать своё время и начать строить актив — посмотрите, как устроена система</h2>
+  <p class="lead">Девять лет назад я пришла в этот бизнес, чтобы просто посмотреть. Я не прошу сразу верить мне, в бизнес или в миллионы. Приходите на форум и посмотрите сами: как устроена бизнес-франшиза международной компании, как работает система, кто эти люди и какие у них цифры. Решение примете сами.</p>
+  <a class="btn warm" href="#forum">Забрать билет на форум</a>
+
+  <div class="leaders" id="leaders">
+    <div>
+      <h3>Для тех, у кого уже есть своя команда</h3>
+      <p>Если вы сетевик, развивали или развиваете сетевой бизнес и чувствуете, что выросли из своих возможностей, — давайте поговорим. Вы уже умеете строить. Я покажу систему масштабирования, которая работает онлайн, на растущем рынке и в 20 странах, — чтобы вы шли к 2–3 млн ₽ в месяц. Заполните анкету — и мы свяжемся с вами.</p>
+    </div>
+    <button class="btn ghost" type="button" id="leadersBtn" aria-expanded="false" aria-controls="leadersForm">Хочу обсудить</button>
+    <form id="leadersForm" class="lead-form" hidden novalidate>
+      <input type="hidden" name="source" value="Своя команда / сетевой бизнес — хочу обсудить">
+      <input type="text" name="website" tabindex="-1" autocomplete="off" class="hp" aria-hidden="true">
+      <label for="l-name">Ваше имя<input id="l-name" name="name" autocomplete="given-name"></label>
+      <label for="l-contact">Телефон или Telegram<input id="l-contact" name="contact" placeholder="+7… или @username"></label>
+      <label class="consent" style="grid-column:1/-1" for="l-consent"><input type="checkbox" id="l-consent" name="consent" value="1"><span>Я даю <a href="consent.html" target="_blank" rel="noopener">согласие на обработку персональных данных</a> в соответствии с Федеральным законом № 152-ФЗ и принимаю <a href="privacy.html" target="_blank" rel="noopener">политику конфиденциальности</a></span></label>
+      <button class="btn warm" type="submit" style="align-self:end">Хочу обсудить</button>
+      <div class="notice" id="l-msg" hidden style="grid-column:1/-1"></div>
+    </form>
+  </div>
+</div></section>
+
+</main>
+
+<footer><div class="wrap">Результаты партнёров индивидуальны и зависят от вложенного времени и действий. Информация на странице не является гарантией дохода. Продукция не является лекарственным средством. © Виктория Иванова<div class="legal-links"><a href="privacy.html" target="_blank" rel="noopener">Политика конфиденциальности</a><a href="consent.html" target="_blank" rel="noopener">Согласие на обработку персональных данных</a></div></div></footer>
+
+<script>
+(function(){
+  function wire(formId, msgId){
+    var f=document.getElementById(formId), m=document.getElementById(msgId);
+    f.addEventListener('submit',function(e){
+      e.preventDefault();
+      var ins=f.querySelectorAll('input[name="name"],input[name="contact"]'),
+          empty=[].filter.call(ins,function(i){return !i.value.trim();});
+      m.hidden=false;
+      if(empty.length){m.textContent='Заполните имя и телефон или Telegram.';empty[0].focus();return;}
+      var cb=f.querySelector('input[name="consent"]'); if(cb&&!cb.checked){m.textContent='Чтобы отправить заявку, отметьте согласие на обработку персональных данных.';cb.focus();return;}
+      var btn=f.querySelector('button[type="submit"]'); btn.disabled=true; m.textContent='Отправляем…';
+      fetch('send.php',{method:'POST',body:new FormData(f)})
+        .then(function(r){return r.json();})
+        .then(function(d){
+          if(d.ok){
+            f.querySelectorAll('input[name="name"],input[name="contact"]').forEach(function(i){i.value='';}); var c2=f.querySelector('input[name="consent"]'); if(c2) c2.checked=false;
+            m.textContent='Спасибо! Заявка принята — мы свяжемся с вами и пришлём ссылку.';
+            if(window.ym&&window.YM_ID){try{ym(window.YM_ID,'reachGoal','lead');}catch(_){}}
+          } else { m.textContent=d.error||'Не удалось отправить. Попробуйте ещё раз.'; }
+        })
+        .catch(function(){m.textContent='Нет связи с сервером. Проверьте интернет и попробуйте ещё раз.';})
+        .finally(function(){btn.disabled=false;});
+    });
+  }
+  wire('leadForm','f-msg'); wire('leadersForm','l-msg');
+  var lb=document.getElementById('leadersBtn'), lf=document.getElementById('leadersForm');
+  lb.addEventListener('click',function(){lf.hidden=false;lb.hidden=true;lb.setAttribute('aria-expanded','true');document.getElementById('l-name').focus();});
+  var c=document.getElementById('carousel');
+  function step(d){var card=c.querySelector('.case');c.scrollBy({left:d*(card.offsetWidth+20),behavior:'smooth'});}
+  document.getElementById('prev').addEventListener('click',function(){step(-1)});
+  document.getElementById('next').addEventListener('click',function(){step(1)});
+})();
+</script>
+
+</body>
+</html>
